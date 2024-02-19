@@ -1,0 +1,23 @@
+## compiling using Makefile
+
+make
+make clean
+
+
+## Running the module
+
+sudo insmod my_module.ko
+dmesg | grep my_module (check init logs)
+
+
+## Unloading the module
+
+sudo rmmod my_module
+dmesg | grep hello_world (check exit logs)
+
+
+## see if module loaded 
+
+grep: search
+
+lsmod | grep hello_world
